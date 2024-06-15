@@ -5,6 +5,9 @@
 
 <div align="justify">
 <p>Esse arquivo se propõe a descrever as etapas para construir o projeto final da matéria de Práticas Básicas de Laboratório, ministrada pelo docente Doutor Leandro Nascimento Lemos, na instituição Ilum – Escola de Ciência em que optamos para usar as habilidades desenvolvidas para recriar a criptografia de RSA, usando a linguagem de Python e criando o código para teoremas essenciais para a otimização do processo de codificar e decodificar. O debate proposto é apresentado para mostrar como foi desenvolvido ferramentas para proteger dados sensíveis e confidencias, cenário comum no âmbito da pesquisa. Além disso, levanta-se a importância da otimização do código, da base teórica matemática e como é possível desenvolver metas audaciosas com o uso de HPC – computação de alto desempenho.
+
+<blockquote>"<i>Uma criptografia robusta é capaz de resistir a uma aplicação ilimitada de violência. Nenhuma força repressora poderá resolver uma equação matemática."
+Julian Assange</blockquote>
 <br></p>
 
 <h3>Sumário</h3>
@@ -39,15 +42,17 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
 
 <h3 id="Processo de criptografia">Processo de criptografia</h3>
 <div align="justify">
-<p>Primeramente, após importar as bibliotecas, foi utilizado o método “sys.set_int_max_str_digits(0)” para corrigir o erro do limite de conversão (4300) de string para inteiros. Além disso, foi definida a variável “tempo_inicio”, que recebeu o valor, em segundos, do tempo de execução do código. Nas próximas etapas, pode-se dividir o procedimento em seis partes:
+<p>Primeramente, após importar as bibliotecas, foi utilizado o método <code>sys.set_int_max_str_digits(0)</code> para corrigir o erro do limite de conversão (4300) de string para inteiros. Além disso, foi definida a variável tempo_inicio, que recebeu o valor, em segundos, do tempo de execução do código. Nas próximas etapas, pode-se dividir o procedimento em seis partes:
 </p>
 
 <ul>
   <h4 id="Método de Euclides">Método de Euclides</h4>
   <div align="justify">
-  <p>Para determinar o Máximo Divisor Comum (MDC), foi definida a função “mdc”, a qual comporta dois argumentos: “valor_1” e “valor_2”. Caso a divisão do “valor_1” pelo 
-  “valor_2” tenha um resto igual a zero, “valor_2” é retornado; se não, atualiza-se os argumentos para “valor_2” e o “resto”, de modo que o algoritmo é continuado até que o 
-  caso-base seja atendido.  Assim, pode-se definir como um algoritmo de recursão.
+  <p>Para determinar o Máximo Divisor Comum (MDC), foi definida a função <code>mdc</code>, a qual comporta dois argumentos: <code>valor_1</code> e <code>valor_2</code>. Caso a divisão do       
+  <code>valor_1</code> pelo <code>valor_2</code> tenha um resto igual a zero, <code>valor_2</code> é retornado; se não, atualiza-se os argumentos para <code>valor_2</code> e o “resto”, de modo que o algoritmo é continuado até que o caso-base seja atendido.  Assim, pode-se definir como um algoritmo de recursão.
+    
+![carbon](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/ea2c75e9-f8b2-4d90-a0ce-efe01abe3d0f)
+ 
   </p>
   
   <h4 id="Definição dos possíveis caracteres">Definição dos possíveis caracteres</h4>
@@ -60,11 +65,13 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
   <div align="justify">
   <p>
    Nessa etapa ocorre a codificação de cada um dos caracteres do texto. O código funciona a partir de uma lista de números com o range de 0 até a quantidade de caracteres 
-   possíveis, como são 373 caracteres a lista vai de 0 até 372 e relaciona todos os caracteres ao seu respectivo número. Após isso a função “codifica_parte_um” percorre 
+   possíveis, como são 373 caracteres a lista vai de 0 até 372 e relaciona todos os caracteres ao seu respectivo número. Após isso a função <code>codifica_parte_um</code> percorre 
    todos os caracteres presentes no arquivo .txt e para cada caractere ela pega os números e soma 100 para que todos os valores tenham três algarismos e retoma uma lista 
    chamada criptografia. 
   </p>
 
+  ![carbon (2)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/023cb498-d5d9-486d-aa6c-96eabba205f0)
+  
   <h4 id="Encontrar os primos">Encontrar os primos</h4>
   <div align="justify">
   <p>
@@ -73,6 +80,9 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
    os múltiplos desse número na lista e passa para o próximo não eliminado, no caso o 3 e repete esse processo, como resultado ele consegue todos os números primos até o 
    limite estabelecido. A próxima etapa é pegar o segundo valor primo que também usa o Crivo de Eratóstenes. 
   </p>
+
+  ![carbon (3)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/9b1a2612-e9db-4a30-ac80-5f102a2f74f1)
+
 
   <h4 id="Ler o texto original e escrever o texto criptgrafado">Ler o texto original e escrever o texto criptgrafado</h4>
   <div align="justify">
