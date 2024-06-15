@@ -3,6 +3,8 @@
 <h1> Criptografia - RSA </h1> 
 <h2> Práticas Básicas de Ciência de Dados </h2>
 
+![image](https://carbon.now.sh/b4287e4b-6906-48be-a4d1-df7479b8432e)
+
 <div align="justify">
 <p>Esse arquivo se propõe a descrever as etapas para construir o projeto final da matéria de Práticas Básicas de Laboratório, ministrada pelo docente Doutor Leandro Nascimento Lemos, na instituição Ilum – Escola de Ciência em que optamos para usar as habilidades desenvolvidas para recriar a criptografia de RSA, usando a linguagem de Python e criando o código para teoremas essenciais para a otimização do processo de codificar e decodificar. O debate proposto é apresentado para mostrar como foi desenvolvido ferramentas para proteger dados sensíveis e confidencias, cenário comum no âmbito da pesquisa. Além disso, levanta-se a importância da otimização do código, da base teórica matemática e como é possível desenvolver metas audaciosas com o uso de HPC – computação de alto desempenho.
 <br></p>
@@ -11,6 +13,8 @@
 <ul>
   <li><a href="#Introdução">Introdução</a></li>
   <li><a href="#Crivo de Eratóstenes">Crivo de Eratóstenes</a></li>
+  <li><a href="#Algoritmo de Euclides">Algoritmo de Euclides</a></li>
+  <li><a href="#Processo criativo">Processo criativo</a></li>
 </ul>
 
 
@@ -20,15 +24,30 @@
 
 <h3>Crivo de Eratóstenes</h3>
 <div align="justify">
-Um dos teoremas matemáticos utilizados durante esse projeto foi o Crivo de Eratóstenes. Resumidamente, é um algoritmo matemático para identificar a quantidade de primos em um intervalo $\left[1,\ N\right]$, sendo $N\$  o último número inteiro positivo. Inicialmente, é criada uma lista contendo os números de $2$ até $N\$ , sem nenhum tipo de critério. Selecione, posteriormente, o primeiro número que não foi categorizado como composto, e defina-o como primo. Em seguida, marque todos os múltiplos desse número $n\$  como compostos, dado que possuem mais de dois divisores. Por fim, repita esse processo até que todos os números do intervalo sejam classificados. Assim, esse algoritmo apresenta uma eficiência maior do que a iterar todos os elementos da lista, em que o teste de primalidade é feito para cada um dos elementos. Utilizando uma comparação a partir da notação Big O, tem-se o seguinte cenário: $O\left(N\bullet\sqrt n\right)$ para a análise tradicional e $O\left(N\bullet\log{\left(n\right)}\right)$ para crivo de Eratóstenes, ou seja, uma redução de complexidade polinomial para complexidade logarítmica. Por isso, esse foi o método utilizado para esse projeto.
+<p>Um dos teoremas matemáticos utilizados durante esse projeto foi o Crivo de Eratóstenes. Resumidamente, é um algoritmo matemático para identificar a quantidade de primos em um intervalo $\left[1,\ N\right]$, sendo $N\$  o último número inteiro positivo. Inicialmente, é criada uma lista contendo os números de $2$ até $N\$ , sem nenhum tipo de critério. Selecione, posteriormente, o primeiro número que não foi categorizado como composto, e defina-o como primo. Em seguida, marque todos os múltiplos desse número $n\$  como compostos, dado que possuem mais de dois divisores. Por fim, repita esse processo até que todos os números do intervalo sejam classificados. Assim, esse algoritmo apresenta uma eficiência maior do que a iterar todos os elementos da lista, em que o teste de primalidade é feito para cada um dos elementos. Utilizando uma comparação a partir da notação Big O, tem-se o seguinte cenário: $O\left(N\bullet\sqrt n\right)$ para a análise tradicional e $O\left(N\bullet\log{\left(n\right)}\right)$ para crivo de Eratóstenes, ou seja, uma redução de complexidade polinomial para complexidade logarítmica. Por isso, esse foi o método utilizado para esse projeto.
 </p>
 
+<h3>Algoritmo de Euclides</h3>
+<div align="justify">
+<p> </p>p
 
+<h3>Processo criativo</h3>
+<div align="justify">
+<p>Primeramente, após importar as bibliotecas, foi utilizado o método “sys.set_int_max_str_digits(0)” para corrigir o erro do limite de conversão (4300) de string para inteiros. Além disso, foi definida a variável “tempo_inicio”, que recebeu o valor, em segundos, do tempo de execução do código. Nas próximas etapas, pode-se dividir o procedimento em seis partes:
+</p>
 
-
+<ul>
+  <h4>MÉTODO DE EUCLIDES - MÁXIMO DIVISOR COMUM</h4>
+  <div align="justify">
+  <p>Para determinar o Máximo Divisor Comum (MDC), foi definida a função “mdc”, a qual comporta dois argumentos: “valor_1” e “valor_2”. Caso a divisão do “valor_1” pelo 
+  “valor_2” tenha um resto igual a zero, “valor_2” é retornado; se não, atualiza-se os argumentos para “valor_2” e o “resto”, de modo que o algoritmo é continuado até que o 
+  caso-base seja atendido.  Assim, pode-se definir como um algoritmo de recursão.
+  </p>
+</div>ul>
 
 <p align="center">
 <img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
+
 
 <blockquote> teste para citações </blockquote>
