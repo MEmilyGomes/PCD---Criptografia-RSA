@@ -1,12 +1,13 @@
 ![Logotipo: Ilum- Escola de Ciências, Centro nacional de Pesquisa em Energia e Materiais(CNPEM), Misnistério da Educação, MCTI, Governo Federal: Brasil](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424897/8ab16e3d-9b90-4e14-b4ae-af54178c31fd) 
 
-<h1>Criptografia - RSA</h1> 
-<h2>Práticas Básicas de Ciência de Dados</h2>
+<h1> Criptografia - RSA </h1> 
+<h2> Práticas Básicas de Ciência de Dados </h2>
 
-# <h3>Índice</h3> 
-* [Introdução](#Introdução)
+<ul>
+  <li><a href="#Introdução">Introdução</a></li>
+</ul>
 
-<h4>Introdução</h4>
+<h3>Introdução</h3>
 <div align="justify">
 <p>Esse arquivo se propõe a descrever as etapas para construir o projeto final da matéria de Práticas Básicas de Laboratório, ministrada pelo docente Doutor Leandro Nascimento Lemos, na instituição Ilum – Escola de Ciência em que optamos para usar as habilidades desenvolvidas para recriar a criptografia de RSA, usando a linguagem de Python e criando o código para teoremas essenciais para a otimização do processo de codificar e decodificar. O debate proposto é apresentado para mostrar como foi desenvolvido ferramentas para proteger dados sensíveis e confidencias, cenário comum no âmbito da pesquisa. Além disso, levanta-se a importância da otimização do código, da base teórica matemática e como é possível desenvolver metas audaciosas com o uso de HPC – computação de alto desempenho.
 <br></p>
