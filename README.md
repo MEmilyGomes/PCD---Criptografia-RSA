@@ -56,7 +56,7 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
    aqui algo
   </p>
 
-  <h4 id="Primeira codificaçâo do texto">Primeira codificaçâo do texto</h4>
+  <h4 id="Primeira codificação do texto">Primeira codificação do texto</h4>
   <div align="justify">
   <p>
    Nessa etapa ocorre a codificação de cada um dos caracteres do texto. O código funciona a partir de uma lista de números com o range de 0 até a quantidade de caracteres 
