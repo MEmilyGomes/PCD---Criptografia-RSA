@@ -24,11 +24,11 @@
 </ul>
 
 
-<h3>Introdução</h3>
+<h3 id="Introducao">Introdução</h3>
 <div align="justify">
 <p>O método de criptografia escolhido foi o RSA, nome esse que faz menção aos desenvolvedores (<i>Rivest – Shamir – Adelman</i>). Esse garante a segurança dos dados quando consegue elaborar boas chaves públicas, valores que serão utilizados nas operações necessárias para transformar cada caractere em um número a ser associado novamente com o seu caractere com outras operações e novas ótimas chaves, as privadas, posteriormente. Para conseguir as encontrar, é necessário obter os maiores números primos que o computador conseguir para realizar operações em um tempo hábil. Nesse sentido, os primeiros desafios foram pautados na elaboração de códigos que encontrasse números primos e, em segundo momento, os ajustes que fossem necessários para melhorar a eficiência.<br></p>
 
-<h3>Crivo de Eratóstenes</h3>
+<h3 id="Crivo de Eratóstenes">Crivo de Eratóstenes</h3>
 <div align="justify">
 <p>Um dos teoremas matemáticos utilizados durante esse projeto foi o Crivo de Eratóstenes. Resumidamente, é um algoritmo matemático para identificar a quantidade de primos em um intervalo $\left[1,\ N\right]$, sendo $N$  o último número inteiro positivo. Inicialmente, é criada uma lista contendo os números de $2$ até $N$ , sem nenhum tipo de critério. Selecione, posteriormente, o primeiro número que não foi categorizado como composto, e defina-o como primo. Em seguida, marque todos os múltiplos desse número $n$  como compostos, dado que possuem mais de dois divisores. Por fim, repita esse processo até que todos os números do intervalo sejam classificados. Assim, esse algoritmo apresenta uma eficiência maior do que a iterar todos os elementos da lista, em que o teste de primalidade é feito para cada um dos elementos. Utilizando uma comparação a partir da notação Big O, tem-se o seguinte cenário: $O\left(N\bullet\sqrt n\right)$ para a análise tradicional e $O\left(N\bullet\log{\left(n\right)}\right)$ para crivo de Eratóstenes, ou seja, uma redução de complexidade polinomial para complexidade logarítmica. Por isso, esse foi o método utilizado para esse projeto.
 </p>
