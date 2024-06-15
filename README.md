@@ -12,7 +12,7 @@
 <li><a href="#Introdução">Introdução</a></li>
 <li><a href="#Crivo de Eratóstenes">Crivo de Eratóstenes</a></li>
 <li><a href="#Algoritmo de Euclides">Algoritmo de Euclides</a></li>
-<li><a href="#Processo criativo">Processo criativo</a></li>
+<li><a href="#Processo de criptografia">Processo de criptografia</a></li>
 <ul>
 <li><a href="#Método de Euclides">Método de Euclides</a></li>
 <li><a href="#Definição dos possíveis caracteres">Definição dos possíveis caracteres</a></li>
@@ -33,30 +33,30 @@
 <p>Um dos teoremas matemáticos utilizados durante esse projeto foi o Crivo de Eratóstenes. Resumidamente, é um algoritmo matemático para identificar a quantidade de primos em um intervalo $\left[1,\ N\right]$, sendo $N$  o último número inteiro positivo. Inicialmente, é criada uma lista contendo os números de $2$ até $N$ , sem nenhum tipo de critério. Selecione, posteriormente, o primeiro número que não foi categorizado como composto, e defina-o como primo. Em seguida, marque todos os múltiplos desse número $n$  como compostos, dado que possuem mais de dois divisores. Por fim, repita esse processo até que todos os números do intervalo sejam classificados. Assim, esse algoritmo apresenta uma eficiência maior do que a iterar todos os elementos da lista, em que o teste de primalidade é feito para cada um dos elementos. Utilizando uma comparação a partir da notação Big O, tem-se o seguinte cenário: $O\left(N\bullet\sqrt n\right)$ para a análise tradicional e $O\left(N\bullet\log{\left(n\right)}\right)$ para crivo de Eratóstenes, ou seja, uma redução de complexidade polinomial para complexidade logarítmica. Por isso, esse foi o método utilizado para esse projeto.
 </p>
 
-<h3>Algoritmo de Euclides</h3>
+<h3 id="Algoritmo de Euclides">Algoritmo de Euclides</h3>
 <div align="justify">
 Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algoritmo de Euclides: dado dos números inteiros A e B, verificamos se A ou B são iguais a 0. Caso A=0, tem-se que MDC (A, B) = B; se B=0, MDC (A, B) =A. Contudo, se ambos forem diferentes de zero, o processo é continuado, de modo que A é escrito como B\cdot Q\ +\ R\ , tal que Q\ e R\ são quociente e resto, respectivamente. Por fim, calcule o MDC (B, R) utilizando o mesmo procedimento, haja visto que MDC (B, R) = MDC (A, B). Isso é realizado até que o caso base (A ou B = 0) seja cumprido.</p>
 
-<h3>Processo criativo</h3>
+<h3 id="Processo de criptografia">Processo de criptografia</h3>
 <div align="justify">
 <p>Primeramente, após importar as bibliotecas, foi utilizado o método “sys.set_int_max_str_digits(0)” para corrigir o erro do limite de conversão (4300) de string para inteiros. Além disso, foi definida a variável “tempo_inicio”, que recebeu o valor, em segundos, do tempo de execução do código. Nas próximas etapas, pode-se dividir o procedimento em seis partes:
 </p>
 
 <ul>
-  <h4>Método de Euclides</h4>
+  <h4 id="Método de Euclides">Método de Euclides</h4>
   <div align="justify">
   <p>Para determinar o Máximo Divisor Comum (MDC), foi definida a função “mdc”, a qual comporta dois argumentos: “valor_1” e “valor_2”. Caso a divisão do “valor_1” pelo 
   “valor_2” tenha um resto igual a zero, “valor_2” é retornado; se não, atualiza-se os argumentos para “valor_2” e o “resto”, de modo que o algoritmo é continuado até que o 
   caso-base seja atendido.  Assim, pode-se definir como um algoritmo de recursão.
   </p>
   
-  <h4>Definição dos possíveis caracteres</h4>
+  <h4 id="Definição dos possíveis caracteres">Definição dos possíveis caracteres</h4>
   <div align="justify">
   <p>
    aqui algo
   </p>
 
-  <h4>Primeira codificaçâo do texto</h4>
+  <h4 id="Primeira codificaçâo do texto">Primeira codificaçâo do texto</h4>
   <div align="justify">
   <p>
    Nessa etapa ocorre a codificação de cada um dos caracteres do texto. O código funciona a partir de uma lista de números com o range de 0 até a quantidade de caracteres 
@@ -65,7 +65,7 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
    chamada criptografia. 
   </p>
 
-  <h4>Encontrar os primos</h4>
+  <h4 id="Encontrar os primos">Encontrar os primos</h4>
   <div align="justify">
   <p>
    Para encontrar os primos o código usado foi o código chamado Crivo de Eratóstenes, que encontra o enésimo valor primo desejado pelo usuário, esse código foi o mais 
@@ -74,13 +74,13 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
    limite estabelecido. A próxima etapa é pegar o segundo valor primo que também usa o Crivo de Eratóstenes. 
   </p>
 
-  <h4>Ler o texto original e escrever o texto criptgrafado</h4>
+  <h4 id="Ler o texto original e escrever o texto criptgrafado">Ler o texto original e escrever o texto criptgrafado</h4>
   <div align="justify">
   <p>
   Essas funções têm o objetivo de trabalhar com os arquivos em formato .txt para etapas posteriores em que o texto criptografado será escrito em um arquivo. 
   </p>
 
-  <h4>Definição da chave pública</h4>
+  <h4 id="Definição da chave pública">Definição da chave pública</h4>
   <div align="justify">
   <p>
   Essa etapa se inicia definindo dois enésimos termos para o Crivo de Euclídes, os valores aleatórios são definidos em um intervalo à escolha do usuário, por exemplo, o 
@@ -88,7 +88,7 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
   dois valores é armazenado em uma variável. A chave pública é a multiplicação dos dois primos gerados. 
   </p>
 
-  <h4>Codificação final do texto</h4>
+  <h4 id="Codificação final do texto">Codificação final do texto</h4>
   <div align="justify">
   <p>
   Para a codificação real do texto o número primo usado é a chave pública, como esse valor é muito grande a codificação do texto é muito mais segura. 
