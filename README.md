@@ -15,7 +15,7 @@
   <li><a href="#Processo criativo">Processo criativo</a></li>
     <ul>
       <li><a href="#Método de Euclides">Método de Euclides</a></li>
-      <li><a href="Definição dos possíveis caracteres">Definição dos possíveis caracteres</a></li>
+      <li><a href="#Definição dos possíveis caracteres">Definição dos possíveis caracteres</a></li>
       <li><a href="#Primeira codificação do texto">Primeira codificação do texto</a></li>
       <li><a href="#Encontrar os primos">Encontrar os primos</a></li>
       <li><a href="#Ler o texto original e escrever o texto criptgrafado">Ler o texto original e escrever o texto criptgrafado</a></li>
