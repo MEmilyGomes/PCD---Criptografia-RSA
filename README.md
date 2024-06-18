@@ -26,6 +26,12 @@
 <li><a href="#Encontrar os primos">Encontrar os primos</a></li>
 <li><a href="#Ler o texto original e escrever o texto criptgrafado">Ler o texto original e escrever o texto criptgrafado</a></li>
 <li><a href="#Definição da chave pública">Definição da chave pública</a></li>
+<li><a href="#Segunda codificação do texto">Segunda codificação do texto</a></li>
+<li><a href="#Função totiente de Euler">Função totiente de Euler</a></li>
+<li><a href="#Encontrar o expoente público">Encontrar o expoente público</a></li>
+<li><a href="#Encontrar o expoente privado">Encontrar o expoente privado</a></li>
+<li><a href="#Codificação do RSA">Codificação do RSA</a></li>
+<li><a href="#Teste de eficiência">Teste de eficiência</a></li>
 </ul>  
 </ul>
 
@@ -111,11 +117,18 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
 ![carbon (9)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/46c3b645-47c3-4c64-ac4a-965751ff4cd3)
 
   
-  <h4 id="Codificação final do texto">Codificação final do texto</h4>
+  <h4 id="Segunda codificação do texto">Segunda codificação do texto</h4>
   <div align="justify">
   <p>
   Para a codificação real do texto o número primo usado é a chave pública, como esse valor é muito grande a codificação do texto é muito mais segura. 
   </p>
+  
+  <h4 id="Função totiente de Euler ">Função totiente de Euler </h4>
+  <div align="justify">
+  <p>
+    Essa função tem o intuito de achar um número que tem o mdc entre os dois primos de 1, para isso a função é definida como a multiplicação entre os antecessores dos dois primos. 
+  </p>
+
 
   <h4 id="Encontrar o expoente público">Encontrar o expoente público</h4>
   <div align="justify">
@@ -163,5 +176,3 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
 <img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
 
-
-<blockquote> teste para citações </blockquote>
