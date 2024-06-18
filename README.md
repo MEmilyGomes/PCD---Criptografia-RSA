@@ -32,6 +32,7 @@
     <li><a href="#Encontrar o expoente privado">Encontrar o expoente privado</a></li>
     <li><a href="#Codificação do RSA">Codificação do RSA</a></li>
     <li><a href="#Teste de eficiência">Teste de eficiência</a></li>
+    </ul>
   </ul>
   <li><a href="#Descriptografia">Descriptografia</a></li>
   <ul>
