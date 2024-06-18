@@ -32,6 +32,13 @@
 <li><a href="#Encontrar o expoente privado">Encontrar o expoente privado</a></li>
 <li><a href="#Codificação do RSA">Codificação do RSA</a></li>
 <li><a href="#Teste de eficiência">Teste de eficiência</a></li>
+
+<li><a href="#Definição das Funções">Definição das Funções</a></li>
+<li><a href="#Entrada do usuário">Entrada do usuário</a></li>
+<li><a href="#Leitura do texto criptografado">Leitura do texto criptografado</a></li>
+<li><a href="#Decodificar a lista">Decodificar a lista</a></li>
+<li><a href="#Converter a lista de volta para o texto original">Converter a lista de volta para o texto original</a></li>
+<li><a href="#Escrever o texto decodificado">Escrever o texto decodificado</a></li>
 </ul>  
 </ul>
 
