@@ -15,31 +15,33 @@
 
 <h3>Sumário</h3>
 <ul>
-<li><a href="#Introdução">Introdução</a></li>
-<li><a href="#Crivo de Eratóstenes">Crivo de Eratóstenes</a></li>
-<li><a href="#Algoritmo de Euclides">Algoritmo de Euclides</a></li>
-<li><a href="#Processo de criptografia">Processo de criptografia</a></li>
-<ul>
-<li><a href="#Método de Euclides">Método de Euclides</a></li>
-<li><a href="#Definição dos possíveis caracteres">Definição dos possíveis caracteres</a></li>
-<li><a href="#Primeira codificação do texto">Primeira codificação do texto</a></li>
-<li><a href="#Encontrar os primos">Encontrar os primos</a></li>
-<li><a href="#Ler o texto original e escrever o texto criptgrafado">Ler o texto original e escrever o texto criptgrafado</a></li>
-<li><a href="#Definição da chave pública">Definição da chave pública</a></li>
-<li><a href="#Segunda codificação do texto">Segunda codificação do texto</a></li>
-<li><a href="#Função totiente de Euler">Função totiente de Euler</a></li>
-<li><a href="#Encontrar o expoente público">Encontrar o expoente público</a></li>
-<li><a href="#Encontrar o expoente privado">Encontrar o expoente privado</a></li>
-<li><a href="#Codificação do RSA">Codificação do RSA</a></li>
-<li><a href="#Teste de eficiência">Teste de eficiência</a></li>
-
-<li><a href="#Definição das Funções">Definição das Funções</a></li>
-<li><a href="#Entrada do usuário">Entrada do usuário</a></li>
-<li><a href="#Leitura do texto criptografado">Leitura do texto criptografado</a></li>
-<li><a href="#Decodificar a lista">Decodificar a lista</a></li>
-<li><a href="#Converter a lista de volta para o texto original">Converter a lista de volta para o texto original</a></li>
-<li><a href="#Escrever o texto decodificado">Escrever o texto decodificado</a></li>
-</ul>  
+  <li><a href="#Introdução">Introdução</a></li>
+  <li><a href="#Crivo de Eratóstenes">Crivo de Eratóstenes</a></li>
+  <li><a href="#Algoritmo de Euclides">Algoritmo de Euclides</a></li>
+  <li><a href="#Processo de criptografia">Processo de criptografia</a></li>
+  <ul>
+    <li><a href="#Método de Euclides">Método de Euclides</a></li>
+    <li><a href="#Definição dos possíveis caracteres">Definição dos possíveis caracteres</a></li>
+    <li><a href="#Primeira codificação do texto">Primeira codificação do texto</a></li>
+    <li><a href="#Encontrar os primos">Encontrar os primos</a></li>
+    <li><a href="#Ler o texto original e escrever o texto criptgrafado">Ler o texto original e escrever o texto criptografado</a></li>
+    <li><a href="#Definição da chave pública">Definição da chave pública</a></li>
+    <li><a href="#Segunda codificação do texto">Segunda codificação do texto</a></li>
+    <li><a href="#Função totiente de Euler">Função totiente de Euler</a></li>
+    <li><a href="#Encontrar o expoente público">Encontrar o expoente público</a></li>
+    <li><a href="#Encontrar o expoente privado">Encontrar o expoente privado</a></li>
+    <li><a href="#Codificação do RSA">Codificação do RSA</a></li>
+    <li><a href="#Teste de eficiência">Teste de eficiência</a></li>
+  </ul>
+  <li><a href="#Descriptografia">Descriptografia</a></li>
+  <ul>
+    <li><a href="#Definição das Funções">Definição das Funções</a></li>
+    <li><a href="#Entrada do usuário">Entrada do usuário</a></li>
+    <li><a href="#Leitura do texto criptografado">Leitura do texto criptografado</a></li>
+    <li><a href="#Decodificar a lista">Decodificar a lista</a></li>
+    <li><a href="#Converter a lista decodificada de volta para o texto original">Converter a lista decodificada de volta para o texto original</a></li>
+    <li><a href="#Escrever o texto decodificado">Escrever o texto decodificado</a></li>
+  </ul>
 </ul>
 
 
@@ -166,30 +168,32 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
 
 
   </p>
-
-  <h4 id="Teste de Eficiência">Teste de Eficiência</h4>
-  <div align="justify">
-  <p>
-   A biblioteca timeit foi usada para testar quanto tempo o computador demora para rodar o código para facilitar com que o usuário consiga criptografar suas mensagens da maneira mais conveniente e para que testes pudessem ser feitos pelos membros do grupo sobre quanto tempo demora para um HPC rodar o código com diferentes quantidades de algarismos. 
-
-  </p>
-
-<h3 id="Descriptografia">Descriptografia</h3>
+<h4 id="Teste de Eficiência">Teste de Eficiência</h4>
 <div align="justify">
-<p>
-<br></p>
-
-  <h4 id="Definição das Funções">Definição das Funções</h4>
-  <div align="justify">
   <p>
-    A função <code>lista_codifica</code> realiza a descriptografia de uma lista de valores numéricos
- codificados usando o algoritmo RSA. Foram colocados três parâmetros: <code>codificada</code>, que é a lista de valores numéricos codificados que serão descriptografados; <code>valor_d</code> e <code>valor_n</code> que são os valores da chave pública <code>d</code> e privada <code>n</code>, respectivamente. 
-
- Além disso, a função <code>decodifica_parte_um</code> converte os valores numéricos descriptografados de volta para caracteres, assumindo que <code>combined_characteres</code> contém os caracteres correspondentes à codificação original. Como parâmetro, temos <code>lista_decodificada</code>, que é a lista de valores numéricos descriptografados. É retornada uma string com o texto codificado correspondente. 
-
-![carbon (15)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/3de7a475-4a61-4deb-84a3-8c083aaabd57)
-
+    A biblioteca timeit foi usada para testar quanto tempo o computador demora para rodar o código para facilitar com que o usuário consiga criptografar suas mensagens da maneira mais conveniente e para que testes pudessem ser feitos pelos membros do grupo sobre quanto tempo demora para um HPC rodar o código com diferentes quantidades de algarismos.
   </p>
+</div>
+
+<h4 id="Descriptografia">Descriptografia</h4>
+<div align="justify">
+  <p>
+    <!-- Adicione conteúdo adicional sobre Descriptografia aqui, se necessário -->
+  </p>
+  
+  <h5 id="Definição das Funções">Definição das Funções</h5>
+  <div align="justify">
+    <p>
+      A função <code>lista_codifica</code> realiza a descriptografia de uma lista de valores numéricos codificados usando o algoritmo RSA. Foram colocados três parâmetros: <code>codificada</code>, que é a lista de valores numéricos codificados que serão descriptografados; <code>valor_d</code> e <code>valor_n</code> que são os valores da chave pública <code>d</code> e privada <code>n</code>, respectivamente.
+
+      Além disso, a função <code>decodifica_parte_um</code> converte os valores numéricos descriptografados de volta para caracteres, assumindo que <code>combined_characteres</code> contém os caracteres correspondentes à codificação original. Como parâmetro, temos <code>lista_decodificada</code>, que é a lista de valores numéricos descriptografados. É retornada uma string com o texto codificado correspondente.
+    </p>
+    <p>
+      <img src="https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/3de7a475-4a61-4deb-84a3-8c083aaabd57" alt="carbon (15)">
+    </p>
+  </div>
+</div>
+
   <h4 id="Entrada do usuário">Entrada do usuário</h4>
   <div align="justify">
   <p>
