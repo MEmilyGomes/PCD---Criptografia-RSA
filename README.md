@@ -178,7 +178,7 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
     A função <code>lista_codifica</code> realiza a descriptografia de uma lista de valores numéricos
  codificados usando o algoritmo RSA. Foram colocados três parâmetros: <code>codificada</code>, que é a lista de valores numéricos codificados que serão descriptografados; <code>valor_d</code> e <code>valor_n</code> que são os valores da chave pública <code>d</code> e privada <code>n</code>, respectivamente. 
 
- Além disso, a função <code>decodifica_parte_um <\code> converte os valores numéricos descriptografados de volta para caracteres, assumindo que <code>combined_characteres<\code> contém os caracteres correspondentes à codificação original. Como parâmetro, temos <code>lista_decodificada<\code>, que é a lista de valores numéricos descriptografados. É retornada uma string com o texto codificado correspondente. 
+ Além disso, a função <code>decodifica_parte_um</code> converte os valores numéricos descriptografados de volta para caracteres, assumindo que <code>combined_characteres</code> contém os caracteres correspondentes à codificação original. Como parâmetro, temos <code>lista_decodificada<\code>, que é a lista de valores numéricos descriptografados. É retornada uma string com o texto codificado correspondente. 
 
 ![carbon (15)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/3de7a475-4a61-4deb-84a3-8c083aaabd57)
 
