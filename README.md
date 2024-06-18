@@ -20,7 +20,7 @@
   <li><a href="#Algoritmo de Euclides">Algoritmo de Euclides</a></li>
   <li><a href="#Processo de criptografia">Processo de criptografia</a></li>
   <ul>
-    <li><a href="#Método de Euclides">Método de Euclides</a></li>
+    <li><a href="#Método-de-Euclides">Método de Euclides</a></li>
     <li><a href="#Definição dos possíveis caracteres">Definição dos possíveis caracteres</a></li>
     <li><a href="#Primeira codificação do texto">Primeira codificação do texto</a></li>
     <li><a href="#Encontrar os primos">Encontrar os primos</a></li>
@@ -64,7 +64,7 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
 </p>
 
 <ul>
-  <h4 id="Método de Euclides">Método de Euclides</h4>
+  <h4 id="Método-de-Euclides">Método de Euclides</h4>
   <div align="justify">
   <p>Para determinar o Máximo Divisor Comum (MDC), foi definida a função <code>mdc</code>, a qual comporta dois argumentos: <code>valor_1</code> e <code>valor_2</code>. Caso a divisão do       
   <code>valor_1</code> pelo <code>valor_2</code> tenha um resto igual a zero, <code>valor_2</code> é retornado; se não, atualiza-se os argumentos para <code>valor_2</code> e o “resto”, de modo que o algoritmo é continuado até que o caso-base seja atendido.  Assim, pode-se definir como um algoritmo de recursão.
