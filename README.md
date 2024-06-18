@@ -70,10 +70,9 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
   <code>valor_1</code> pelo <code>valor_2</code> tenha um resto igual a zero, <code>valor_2</code> é retornado; se não, atualiza-se os argumentos para <code>valor_2</code> e o “resto”, de modo que o algoritmo é continuado até que o caso-base seja atendido.  Assim, pode-se definir como um algoritmo de recursão.
     
 ![carbon](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/ea2c75e9-f8b2-4d90-a0ce-efe01abe3d0f)
- 
   </p>
   
-  <h4 id="Definição dos possíveis caracteres">Definição dos possíveis caracteres</h4>
+  <h4 id="Definição dos possíveis caracteres">Definição dos possíveis caracteres</h4> 
   <div align="justify">
   <p>
    Para isso, foi utilizado um algoritmo que reúne os principais caracteres da tabela ASCII e outras derivações, a fim de se obter todas as combinações de caracteres possíveis.
