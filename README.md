@@ -19,6 +19,7 @@
   <li><a href="#Crivo de Eratóstenes">Crivo de Eratóstenes</a></li>
   <li><a href="#Algoritmo de Euclides">Algoritmo de Euclides</a></li>
   <li><a href="#Processo de criptografia">Processo de criptografia</a></li>
+  </ul>
   <ul>
     <li><a href="#Método-de-Euclides">Método de Euclides</a></li>
     <li><a href="#Definição dos possíveis caracteres">Definição dos possíveis caracteres</a></li>
@@ -32,7 +33,6 @@
     <li><a href="#Encontrar o expoente privado">Encontrar o expoente privado</a></li>
     <li><a href="#Codificação do RSA">Codificação do RSA</a></li>
     <li><a href="#Teste de eficiência">Teste de eficiência</a></li>
-    </ul>
   </ul>
   <li><a href="#Descriptografia">Descriptografia</a></li>
   <ul>
