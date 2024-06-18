@@ -248,11 +248,7 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
     </ul>
 </body>
 </html>
-
-
   </p>
-
-
     
 </div></ul>
 
