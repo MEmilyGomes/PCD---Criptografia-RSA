@@ -42,7 +42,7 @@
 
 <h3 id="Crivo de Eratóstenes">Crivo de Eratóstenes</h3>
 <div align="justify">
-<p>Um dos teoremas matemáticos utilizados durante esse projeto foi o Crivo de Eratóstenes. Resumidamente, é um algoritmo matemático para identificar a quantidade de primos em um intervalo $ \left[1,\ N\right] $, sendo $ N $  o último número inteiro positivo. Inicialmente, é criada uma lista contendo os números de $2$ até $N$ , sem nenhum tipo de critério. Selecione, posteriormente, o primeiro número que não foi categorizado como composto, e defina-o como primo. Em seguida, marque todos os múltiplos desse número $n$  como compostos, dado que possuem mais de dois divisores. Por fim, repita esse processo até que todos os números do intervalo sejam classificados. Assim, esse algoritmo apresenta uma eficiência maior do que a iterar todos os elementos da lista, em que o teste de primalidade é feito para cada um dos elementos. Utilizando uma comparação a partir da notação Big O, tem-se o seguinte cenário: $ O\left(N\bullet\sqrt n\right) $ para a análise tradicional e $ O\left(N\bullet\log{\left(n\right)}\right) $ para crivo de Eratóstenes, ou seja, uma redução de complexidade polinomial para complexidade logarítmica. Por isso, esse foi o método utilizado para esse projeto.
+<p>Um dos teoremas matemáticos utilizados durante esse projeto foi o Crivo de Eratóstenes. Resumidamente, é um algoritmo matemático para identificar a quantidade de primos em um intervalo $\left[1,\ N\right]$, sendo $N$  o último número inteiro positivo. Inicialmente, é criada uma lista contendo os números de $2$ até $N$ , sem nenhum tipo de critério. Selecione, posteriormente, o primeiro número que não foi categorizado como composto, e defina-o como primo. Em seguida, marque todos os múltiplos desse número $n$  como compostos, dado que possuem mais de dois divisores. Por fim, repita esse processo até que todos os números do intervalo sejam classificados. Assim, esse algoritmo apresenta uma eficiência maior do que a iterar todos os elementos da lista, em que o teste de primalidade é feito para cada um dos elementos. Utilizando uma comparação a partir da notação Big O, tem-se o seguinte cenário: $O\left(N\bullet\sqrt n\right)$ para a análise tradicional e $O\left(N\bullet\log{\left(n\right)}\right)$ para crivo de Eratóstenes, ou seja, uma redução de complexidade polinomial para complexidade logarítmica. Por isso, esse foi o método utilizado para esse projeto.
 </p>
 
 <h3 id="Algoritmo de Euclides">Algoritmo de Euclides</h3>
@@ -166,6 +166,54 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
    A biblioteca timeit foi usada para testar quanto tempo o computador demora para rodar o código para facilitar com que o usuário consiga criptografar suas mensagens da maneira mais conveniente e para que testes pudessem ser feitos pelos membros do grupo sobre quanto tempo demora para um HPC rodar o código com diferentes quantidades de algarismos. 
 
   </p>
+
+<h3 id="Descriptografia">Descriptografia</h3>
+<div align="justify">
+<p>
+<br></p>
+
+  <h4 id="Definição das Funções">Definição das Funções</h4>
+  <div align="justify">
+  <p>
+    A função <code>lista_codifica</code> realiza a descriptografia de uma lista de valores numéricos
+ codificados usando o algoritmo RSA. Foram colocados três parâmetros: <code>codificada</code>, que é a lista de valores numéricos codificados que serão descriptografados; <code>valor_d</code> e <code>valor_n</code> que são os valores da chave pública <code>d</code> e privada <code>n</code>, respectivamente. 
+
+ Além disso, a função <code>decodifica_parte_um<\code> converte os valores numéricos descriptografados de volta para caracteres, assumindo que <code>combined_characteres<\code> contém os caracteres correspondentes à codificação original. Como parâmetro, temos <code>lista_decodificada<\code>, que é a lista de valores numéricos descriptografados. É retornada uma string com o texto codificado correspondente. 
+
+![carbon (15)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/3de7a475-4a61-4deb-84a3-8c083aaabd57)
+
+  </p>
+  <h4 id="Entrada do usuário">Entrada do usuário</h4>
+  <div align="justify">
+  <p>
+   Esse trecho do código solicita ao usuário o nome do arquivo criptografado, o valor da chave privada <code>d</code> e da chave pública <code>n</code>
+  </p>
+
+  <h4 id="Leitura do texto criptografado">Leitura do texto criptografado</h4>
+  <div align="justify">
+  <p>
+   A função <code>ler_texto_arquivo(nome_arquivo_criptografado)</code> para ler o texto criptografado do arquivo especificado pelo usuário. Após isso, o texto é convertido em uma lista de inteiros <code>(codificada)</code> utilizando <code>split()</code> para separar os números e <code>map(int, ...)</code> para converter em inteiros.
+  </p>
+
+  <h4 id="Decodificar a Lista">Decodificar a Lista</h4>
+  <div align="justify">
+  <p>
+   A variável “decodificada” recebe o valor da <code>lista_decodificada</code>, que possui os argumentos <code>codificada</code>, <code>d</code>, <code>n</code>. Em seguida, ocorre a impressão desses valores numéricos desencriptados.
+  </p>
+
+  <h4 id="Converter a lista decodificada de volta para o texto original">Converter a lista decodificada de volta para o texto original</h4>
+  <div align="justify">
+  <p>
+   Cada número é associado a uma letra específica. Assim, esse texto decodificado é impresso
+  </p>
+
+  <h4 id="Escrever o texto decodificado">Escrever o texto decodificado</h4>
+  <div align="justify">
+  <p>
+   O texto decodificado é impresso e salvo em um arquivo “.txt”.
+  </p>
+
+
 
 
 
