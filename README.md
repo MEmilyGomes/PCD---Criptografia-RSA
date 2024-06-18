@@ -84,15 +84,22 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
    limite estabelecido. A próxima etapa é pegar o segundo valor primo que também usa o Crivo de Eratóstenes. 
   </p>
 
-  ![carbon (3)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/9b1a2612-e9db-4a30-ac80-5f102a2f74f1)
+![carbon (7)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/b57805c7-1a36-45c5-8709-de410dd40ae7)
+
+<blockquote>
+  <i>Fonte: ChatGPT 3.4 (fins educacionais/acadêmicos)</i>
+</blockquote>
 
 
   <h4 id="Ler o texto original e escrever o texto criptgrafado">Ler o texto original e escrever o texto criptgrafado</h4>
   <div align="justify">
   <p>
-  Essas funções têm o objetivo de trabalhar com os arquivos em formato .txt para etapas posteriores em que o texto criptografado será escrito em um arquivo. 
+  Essas funções têm o objetivo de trabalhar com os arquivos em formato .txt para etapas posteriores em que o texto criptografado será escrito em um arquivo.
   </p>
+    
+![carbon (8)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/eb2d9b18-7d03-4912-a0a2-afa27fd06f53)
 
+  
   <h4 id="Definição da chave pública">Definição da chave pública</h4>
   <div align="justify">
   <p>
@@ -101,11 +108,54 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
   dois valores é armazenado em uma variável. A chave pública é a multiplicação dos dois primos gerados. 
   </p>
 
+![carbon (9)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/46c3b645-47c3-4c64-ac4a-965751ff4cd3)
+
+  
   <h4 id="Codificação final do texto">Codificação final do texto</h4>
   <div align="justify">
   <p>
   Para a codificação real do texto o número primo usado é a chave pública, como esse valor é muito grande a codificação do texto é muito mais segura. 
   </p>
+
+  <h4 id="Encontrar o expoente público">Encontrar o expoente público</h4>
+  <div align="justify">
+  <p>
+   Inicialmente, a função “acha_coprimos” é definida para achar o número que tem mdc igual a 1 com o “valor_z” escolhido e os valores no range de 3 ao “valor_z”. Após isso o expoente público é definido como “acha_coprimos(z)” para procurar qual é o valor de e para o qual o mdc com o valor 5 tem resultado de 1.
+
+  ![carbon (12)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/20e2b32f-6292-4334-985e-1e48df2f3ac3)
+
+    
+  </p>
+
+  <h4 id="Encontrar o expoente privado ">Encontrar o expoente privado</h4>
+  <div align="justify">
+  <p>
+   O conceito de inverso modular diz respeito ao resto da multiplicação entre dois números a e b, se esse resto for 1 eles são inversos modulares entre si, a função “achar_d” faz isso. Após isso, definimos d como a função “achar_d” aplicada aos valores do toriente de Euler (z) e o expoente público (e).
+
+  ![carbon (13)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/7943bdaa-437f-4572-9251-70601b12022e)
+
+    
+  </p>
+
+  <h4 id="Codificação do RSA">Codificação do RSA</h4>
+  <div align="justify">
+  <p>
+   Após isso ocorre a codificação do texto a partir da multiplicação de cada número da lista codificada usando a chave pública pelo expoente público e pela chave pública. Feito isso o algoritmo escreve um arquivo .txt com os valores codificados a partir da codificação RSA e com o auxílio de uma função que escreve os valores da lista no formato de string. 
+  
+  ![carbon (14)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/24c14300-91b1-43c2-a8b9-add44bd556b2)
+
+
+  </p>
+
+  <h4 id="Teste de Eficiência">Teste de Eficiência</h4>
+  <div align="justify">
+  <p>
+   A biblioteca timeit foi usada para testar quanto tempo o computador demora para rodar o código para facilitar com que o usuário consiga criptografar suas mensagens da maneira mais conveniente e para que testes pudessem ser feitos pelos membros do grupo sobre quanto tempo demora para um HPC rodar o código com diferentes quantidades de algarismos. 
+
+  </p>
+
+
+
     
 </div></ul>
 
