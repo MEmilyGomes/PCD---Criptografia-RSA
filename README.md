@@ -222,10 +222,7 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
   <h4 id="Converter a lista decodificada de volta para o texto original">Converter a lista decodificada de volta para o texto original</h4>
   <div align="justify">
   <p>
-   Cada número é associado a uma letra específica. Assim, esse texto decodificado é impresso.
-
-   ![carbon (20)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/376eaac0-b723-4e13-bd46-67f0c3e2e826)
-    
+   Cada número é associado a uma letra específica. Assim, esse texto decodificado é impresso.    
   </p>
 
   <h4 id="Escrever o texto decodificado">Escrever o texto decodificado</h4>
