@@ -41,6 +41,7 @@
     <li><a href="#Decodificar a lista">Decodificar a lista</a></li>
     <li><a href="#Converter a lista decodificada de volta para o texto original">Converter a lista decodificada de volta para o texto original</a></li>
     <li><a href="#Escrever o texto decodificado">Escrever o texto decodificado</a></li>
+    </ul>
 </ul>
 
 
