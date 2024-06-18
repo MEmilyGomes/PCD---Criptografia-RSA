@@ -123,7 +123,7 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
   Para a codificação real do texto o número primo usado é a chave pública, como esse valor é muito grande a codificação do texto é muito mais segura. 
   </p>
   
-  <h4 id="Função totiente de Euler ">Função totiente de Euler </h4>
+  <h4 id="Função totiente de Euler ">Função totiente de Euler</h4>
   <div align="justify">
   <p>
     Essa função tem o intuito de achar um número que tem o mdc entre os dois primos de 1, para isso a função é definida como a multiplicação entre os antecessores dos dois primos. 
@@ -133,7 +133,7 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
   <h4 id="Encontrar o expoente público">Encontrar o expoente público</h4>
   <div align="justify">
   <p>
-   Inicialmente, a função “acha_coprimos” é definida para achar o número que tem mdc igual a 1 com o “valor_z” escolhido e os valores no range de 3 ao “valor_z”. Após isso o expoente público é definido como “acha_coprimos(z)” para procurar qual é o valor de e para o qual o mdc com o valor 5 tem resultado de 1.
+   Inicialmente, a função <code>acha_coprimos</code> é definida para achar o número que tem mdc igual a 1 com o <code>valor_z</code> escolhido e os valores no range de 3 ao <code>valor_z</code>. Após isso o expoente público é definido como <code>acha_coprimos(z)</code> para procurar qual é o valor de e para o qual o mdc com o valor 5 tem resultado de 1.
 
   ![carbon (12)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/20e2b32f-6292-4334-985e-1e48df2f3ac3)
 
@@ -143,7 +143,7 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
   <h4 id="Encontrar o expoente privado ">Encontrar o expoente privado</h4>
   <div align="justify">
   <p>
-   O conceito de inverso modular diz respeito ao resto da multiplicação entre dois números a e b, se esse resto for 1 eles são inversos modulares entre si, a função “achar_d” faz isso. Após isso, definimos d como a função “achar_d” aplicada aos valores do toriente de Euler (z) e o expoente público (e).
+   O conceito de inverso modular diz respeito ao resto da multiplicação entre dois números a e b, se esse resto for 1 eles são inversos modulares entre si, a função <code>achar_d</code> faz isso. Após isso, definimos d como a função <code>achar_d</code> aplicada aos valores do toriente de Euler (z) e o expoente público (e).
 
   ![carbon (13)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/7943bdaa-437f-4572-9251-70601b12022e)
 
