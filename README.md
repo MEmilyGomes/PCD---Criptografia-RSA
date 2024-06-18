@@ -76,7 +76,12 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
   <h4 id="Definição dos possíveis caracteres">Definição dos possíveis caracteres</h4>
   <div align="justify">
   <p>
-   aqui algo
+   Para isso, foi utilizado um algoritmo que reúne os principais caracteres da tabela ASCII e outras derivações, a fim de se obter todas as combinações de caracteres possíveis.
+
+  ![carbon (16)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/c2b28543-c7ab-411a-934c-e4c982276852)
+  <blockquote>
+  <i>Fonte: ChatGPT 3.4 (fins educacionais/acadêmicos)</i>
+</blockquote>
   </p>
 
   <h4 id="Primeira codificação do texto">Primeira codificação do texto</h4>
@@ -124,8 +129,7 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
   </p>
 
 ![carbon (9)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/46c3b645-47c3-4c64-ac4a-965751ff4cd3)
-
-  
+ 
   <h4 id="Segunda codificação do texto">Segunda codificação do texto</h4>
   <div align="justify">
   <p>
@@ -138,15 +142,13 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
     Essa função tem o intuito de achar um número que tem o mdc entre os dois primos de 1, para isso a função é definida como a multiplicação entre os antecessores dos dois primos. 
   </p>
 
-
   <h4 id="Encontrar o expoente público">Encontrar o expoente público</h4>
   <div align="justify">
   <p>
    Inicialmente, a função <code>acha_coprimos</code> é definida para achar o número que tem mdc igual a 1 com o <code>valor_z</code> escolhido e os valores no range de 3 ao <code>valor_z</code>. Após isso o expoente público é definido como <code>acha_coprimos(z)</code> para procurar qual é o valor de e para o qual o mdc com o valor 5 tem resultado de 1.
 
   ![carbon (12)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/20e2b32f-6292-4334-985e-1e48df2f3ac3)
-
-    
+  
   </p>
 
   <h4 id="Encontrar o expoente privado ">Encontrar o expoente privado</h4>
@@ -155,8 +157,7 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
    O conceito de inverso modular diz respeito ao resto da multiplicação entre dois números a e b, se esse resto for 1 eles são inversos modulares entre si, a função <code>achar_d</code> faz isso. Após isso, definimos d como a função <code>achar_d</code> aplicada aos valores do toriente de Euler (z) e o expoente público (e).
 
   ![carbon (13)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/7943bdaa-437f-4572-9251-70601b12022e)
-
-    
+  
   </p>
 
   <h4 id="Codificação do RSA">Codificação do RSA</h4>
@@ -165,8 +166,7 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
    Após isso ocorre a codificação do texto a partir da multiplicação de cada número da lista codificada usando a chave pública pelo expoente público e pela chave pública. Feito isso o algoritmo escreve um arquivo .txt com os valores codificados a partir da codificação RSA e com o auxílio de uma função que escreve os valores da lista no formato de string. 
   
   ![carbon (14)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/24c14300-91b1-43c2-a8b9-add44bd556b2)
-
-
+  
   </p>
 <h4 id="Teste de Eficiência">Teste de Eficiência</h4>
 <div align="justify">
@@ -185,7 +185,6 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
   <div align="justify">
     <p>
       A função <code>lista_codifica</code> realiza a descriptografia de uma lista de valores numéricos codificados usando o algoritmo RSA. Foram colocados três parâmetros: <code>codificada</code>, que é a lista de valores numéricos codificados que serão descriptografados; <code>valor_d</code> e <code>valor_n</code> que são os valores da chave pública <code>d</code> e privada <code>n</code>, respectivamente.
-
       Além disso, a função <code>decodifica_parte_um</code> converte os valores numéricos descriptografados de volta para caracteres, assumindo que <code>combined_characteres</code> contém os caracteres correspondentes à codificação original. Como parâmetro, temos <code>lista_decodificada</code>, que é a lista de valores numéricos descriptografados. É retornada uma string com o texto codificado correspondente.
     </p>
     <p>
@@ -198,30 +197,60 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
   <div align="justify">
   <p>
    Esse trecho do código solicita ao usuário o nome do arquivo criptografado, o valor da chave privada <code>d</code> e da chave pública <code>n</code>
+
+  ![carbon (17)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/164646f2-49e3-4c12-8851-edb831b56e13)
+
   </p>
 
   <h4 id="Leitura do texto criptografado">Leitura do texto criptografado</h4>
   <div align="justify">
   <p>
    A função <code>ler_texto_arquivo(nome_arquivo_criptografado)</code> para ler o texto criptografado do arquivo especificado pelo usuário. Após isso, o texto é convertido em uma lista de inteiros <code>(codificada)</code> utilizando <code>split()</code> para separar os números e <code>map(int, ...)</code> para converter em inteiros.
+
+  ![carbon (18)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/61fdd515-d022-48e9-b587-cf463309e89e)
+
   </p>
 
   <h4 id="Decodificar a Lista">Decodificar a Lista</h4>
   <div align="justify">
   <p>
    A variável “decodificada” recebe o valor da <code>lista_decodificada</code>, que possui os argumentos <code>codificada</code>, <code>d</code>, <code>n</code>. Em seguida, ocorre a impressão desses valores numéricos desencriptados.
+
+  ![carbon (19)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/05313bef-af0b-4185-b22d-c7888419b93c)
+  
   </p>
 
   <h4 id="Converter a lista decodificada de volta para o texto original">Converter a lista decodificada de volta para o texto original</h4>
   <div align="justify">
   <p>
-   Cada número é associado a uma letra específica. Assim, esse texto decodificado é impresso
+   Cada número é associado a uma letra específica. Assim, esse texto decodificado é impresso.
+
+   ![carbon (20)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/376eaac0-b723-4e13-bd46-67f0c3e2e826)
+    
   </p>
 
   <h4 id="Escrever o texto decodificado">Escrever o texto decodificado</h4>
   <div align="justify">
   <p>
    O texto decodificado é impresso e salvo em um arquivo “.txt”.
+   
+  ![carbon (21)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/acea36b8-5bea-4608-be14-7f7b932316cd)
+
+  </p>
+
+  <h1>Análise de Eficiência do Código</h1>
+    <p>
+        Levando em conta o alto poder de processamento necessário para trabalhar com números muito grandes, testamos a eficiência do código usando o HPC da Ilum – Escola de Ciência que foi liberado para uso dos alunos. Rodamos o código com 45 cores disponíveis para uso e testamos a eficiência dele com base na função <code>timeit</code>, para diversas situações. A seguir, analisaremos os resultados obtidos, considerando os seguintes parâmetros:
+    </p>
+    <ul>
+        <li><strong>Muito seguro</strong>: O nº número primo, tal que n encontra-se no intervalo $[1 \times 10^6, 1 \times 10^7]$</li>
+        <li><strong>Seguro</strong>: O nº número primo, tal que n encontra-se no intervalo $[1 \times 10^4, 1 \times 10^5]$</li>
+        <li><strong>Pouco seguro</strong>: O nº número primo, tal que n encontra-se no intervalo $[1 \times 10^2, 1 \times 10^3]$</li>
+    </ul>
+</body>
+</html>
+
+
   </p>
 
 
