@@ -10,15 +10,6 @@
   <i>Uma criptografia robusta é capaz de resistir a uma aplicação ilimitada de violência. Nenhuma força repressora poderá resolver uma equação matemática.
   Julian Assange</i>
 </blockquote>
-
-### Sumário 
-
-* [Introdução](#Introdução)
-* [Crivo de Eratóstenes](#Crivo-de-Eratóstenes)
-* [Algoritmo de Euclides](#Algoritmo-de-Euclides)
-* [Processo de criptografia](#Processo-de-criptografia)
-* [Método de Euclides](#Método-de-Euclides)
-
   
 <br></p>
 
@@ -74,7 +65,7 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
 <p>Primeramente, após importar as bibliotecas, foi utilizado o método <code>sys.set_int_max_str_digits(0)</code> para corrigir o erro do limite de conversão (4300) de string para inteiros. Além disso, foi definida a variável tempo_inicio, que recebeu o valor, em segundos, do tempo de execução do código. Nas próximas etapas, pode-se dividir o procedimento em seis partes:
 </p>
 
-  <h3 id="Método de Euclides">Método de Euclides</h3>
+  <h4 id="Método de Euclides">Método de Euclides</h4>
   <div align="justify">
   <p>Para determinar o Máximo Divisor Comum (MDC), foi definida a função <code>mdc</code>, a qual comporta dois argumentos: <code>valor_1</code> e <code>valor_2</code>. Caso a divisão do       
   <code>valor_1</code> pelo <code>valor_2</code> tenha um resto igual a zero, <code>valor_2</code> é retornado; se não, atualiza-se os argumentos para <code>valor_2</code> e o “resto”, de modo que o algoritmo é continuado até que o caso-base seja atendido.  Assim, pode-se definir como um algoritmo de recursão.
@@ -148,7 +139,7 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
   <h4 id="Função totiente de Euler ">Função totiente de Euler</h4>
   <div align="justify">
   <p>
-    Essa função tem o intuito de achar um número que tem o mdc entre os dois primos de 1, para isso a função é definida como a multiplicação entre os antecessores dos dois primos. 
+Essa função tem o intuito de achar um número que tem o mdc entre os dois primos de 1, para isso a função é definida como a multiplicação entre os antecessores dos dois primos. 
   </p>
 
   <h4 id="Encontrar o expoente público">Encontrar o expoente público</h4>
@@ -253,9 +244,6 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
         <li><strong>Seguro</strong>: O nº número primo, tal que n encontra-se no intervalo $[1 \times 10^4, 1 \times 10^5]$</li>
         <li><strong>Pouco seguro</strong>: O nº número primo, tal que n encontra-se no intervalo $[1 \times 10^2, 1 \times 10^3]$</li>
     </ul>
-
-
-
 
 
 </body>
