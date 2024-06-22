@@ -74,7 +74,6 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
 <p>Primeramente, após importar as bibliotecas, foi utilizado o método <code>sys.set_int_max_str_digits(0)</code> para corrigir o erro do limite de conversão (4300) de string para inteiros. Além disso, foi definida a variável tempo_inicio, que recebeu o valor, em segundos, do tempo de execução do código. Nas próximas etapas, pode-se dividir o procedimento em seis partes:
 </p>
 
-<ul>
   <h3 id="Método de Euclides">Método de Euclides</h3>
   <div align="justify">
   <p>Para determinar o Máximo Divisor Comum (MDC), foi definida a função <code>mdc</code>, a qual comporta dois argumentos: <code>valor_1</code> e <code>valor_2</code>. Caso a divisão do       
