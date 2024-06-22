@@ -80,7 +80,7 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
 
   ![carbon (16)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/c2b28543-c7ab-411a-934c-e4c982276852)
   <blockquote>
-  <i>Fonte: ChatGPT 3.4 (fins educacionais/acadêmicos)</i>
+  <i>Fonte: OpenAI. (2021). ChatGPT (Versão 3.5) [Software]. Recuperado de https://openai.com</i>
 </blockquote>
   </p>
 
@@ -107,7 +107,7 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
 ![carbon (7)](https://github.com/MEmilyGomes/PCD---Criptografia-RSA/assets/172424921/b57805c7-1a36-45c5-8709-de410dd40ae7)
 
 <blockquote>
-  <i>Fonte: ChatGPT 3.4 (fins educacionais/acadêmicos)</i>
+  <i>Fonte: OpenAI. (2021). ChatGPT (Versão 3.5) [Software]. Recuperado de https://openai.com</i>
 </blockquote>
 
 
