@@ -19,7 +19,7 @@
 * [Processo de criptografia](#Processo-de-criptografia)
   <ul>
 * [Método de Euclides](#Método-de-Euclides)
-  </ul>ul>
+  </ul>
   
 <br></p>
 
@@ -30,8 +30,8 @@
   <li><a href="#Algoritmo de Euclides">Algoritmo de Euclides</a></li>
   <li><a href="#Processo de criptografia">Processo de criptografia</a></li>
   <ul>
-    <li><a href="#Método-de-Euclides">Método de Euclides</a></li>
-    <li><a href="#Definição dos possíveis caracteres">Definição dos possíveis caracteres</a></li>
+  <li><a href="#Método-de-Euclides">Método de Euclides</a></li>
+  <li><a href="#Definição dos possíveis caracteres">Definição dos possíveis caracteres</a></li>
     <li><a href="#Primeira codificação do texto">Primeira codificação do texto</a></li>
     <li><a href="#Encontrar os primos">Encontrar os primos</a></li>
     <li><a href="#Ler o texto original e escrever o texto criptgrafado">Ler o texto original e escrever o texto criptografado</a></li>
