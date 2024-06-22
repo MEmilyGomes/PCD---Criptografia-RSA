@@ -17,9 +17,8 @@
 * [Crivo de Eratóstenes](#Crivo-de-Eratóstenes)
 * [Algoritmo de Euclides](#Algoritmo-de-Euclides)
 * [Processo de criptografia](#Processo-de-criptografia)
-  <ul>
 * [Método de Euclides](#Método-de-Euclides)
-  </ul>
+
   
 <br></p>
 
@@ -76,7 +75,7 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
 </p>
 
 <ul>
-  <h3 Método de Euclides</h3>
+  <h3 id="Método de Euclides">Método de Euclides</h3>
   <div align="justify">
   <p>Para determinar o Máximo Divisor Comum (MDC), foi definida a função <code>mdc</code>, a qual comporta dois argumentos: <code>valor_1</code> e <code>valor_2</code>. Caso a divisão do       
   <code>valor_1</code> pelo <code>valor_2</code> tenha um resto igual a zero, <code>valor_2</code> é retornado; se não, atualiza-se os argumentos para <code>valor_2</code> e o “resto”, de modo que o algoritmo é continuado até que o caso-base seja atendido.  Assim, pode-se definir como um algoritmo de recursão.
