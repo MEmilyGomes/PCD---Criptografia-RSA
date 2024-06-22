@@ -136,7 +136,7 @@ Além disso, para encontrar o Máximo Divisor Comum (MDC), foi aplicado o algori
   Para a codificação real do texto o número primo usado é a chave pública, como esse valor é muito grande a codificação do texto é muito mais segura. 
   </p>
   
-  <h4 id="Função totiente de Euler ">Função totiente de Euler</h4>
+  <h4 id="Função totiente de Euler">Função totiente de Euler</h4>
   <div align="justify">
   <p>
 Essa função tem o intuito de achar um número que tem o mdc entre os dois primos de 1, para isso a função é definida como a multiplicação entre os antecessores dos dois primos. 
@@ -151,7 +151,7 @@ Essa função tem o intuito de achar um número que tem o mdc entre os dois prim
   
   </p>
 
-  <h4 id="Encontrar o expoente privado ">Encontrar o expoente privado</h4>
+  <h4 id="Encontrar o expoente privado">Encontrar o expoente privado</h4>
   <div align="justify">
   <p>
    O conceito de inverso modular diz respeito ao resto da multiplicação entre dois números a e b, se esse resto for 1 eles são inversos modulares entre si, a função <code>achar_d</code> faz isso. Após isso, definimos d como a função <code>achar_d</code> aplicada aos valores do toriente de Euler (z) e o expoente público (e).
