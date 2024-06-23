@@ -259,6 +259,12 @@ Essa função tem o intuito de achar um número que tem o mdc entre os dois prim
 | :---: | :---: | :---: | :---: |
 
 
+ <div align="justify">
+  <p>
+<code>Emily Gomes</code> e <code>Pedro Coelho</code> pensaram na ideia do projeto e desenvolveram o código que recria a criptografia de RSA em python, assim como organizaram o README. Emily Gomes elaborou o resumo acerca do trabalho e Pedro Coelho avaliou a eficiência do código em um computador pessoal como no HPC da Ilum - Escola de Ciências. <code>Adrian Lincoln Paz</code>code> foi responsável por organizar o procedimento matemático da criptografia. Além disso, ele e o <code>Lucas Nascimento</code>code> fez a descrição do código (etapa do GitHub), relatando o que cada linha significava e como o código funcionava em um âmbito geral, participaram também da construção dos slides.  
+  </p>
+
+
 <p align="center">
 <img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
