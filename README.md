@@ -235,7 +235,7 @@ Essa função tem o intuito de achar um número que tem o mdc entre os dois prim
 
   </p>
 
-  <h2>Análise de Eficiência do Código</h2>
+  <h2 id="Análise de Eficiência do Código">Análise de Eficiência do Código</h2>
     <p>
         Levando em conta o alto poder de processamento necessário para trabalhar com números muito grandes, testamos a eficiência do código usando o HPC da Ilum – Escola de Ciência que foi liberado para uso dos alunos. Rodamos o código com 45 cores disponíveis para uso e testamos a eficiência dele com base na função <code>timeit</code>, para diversas situações. A seguir, analisaremos os resultados obtidos, considerando os seguintes parâmetros:
     </p>
@@ -253,11 +253,11 @@ Essa função tem o intuito de achar um número que tem o mdc entre os dois prim
 </div></ul>
 
 
-<h2>Contribuidores</h2>
+<h2 id="Desenvolvedores">Desenvolvedores</h2>
 
-[<img loading="lazy" src="" width=115><br><sub>Pedro Coelho Gimenes de Freitas</sub>](https://github.com/pedrocoelhogf) 
+| [<img loading="lazy" src="https://github.com/MEmilyGomes/PCD---Criptografia-RSA/blob/main/591a3026-7b21-454a-aabd-b3b1b001c53a.jpg?raw=true" width=115><br><sub>Pedro Coelho Gimenes de Freitas</sub>](https://github.com/pedrocoelhogf) |[<img loading="lazy" src="https://github.com/MEmilyGomes/PCD---Criptografia-RSA/blob/main/591a3026-7b21-454a-aabd-b3b1b001c53a.jpg?raw=true" width=115><br><sub>Pedro Coelho Gimenes de Freitas</sub>](https://github.com/pedrocoelhogf) |
+| :---: | :---: |
 
-| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Camila Fernanda Alves</sub>](https://github.com/camilafernanda) |
 
 <p align="center">
 <img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
