@@ -258,7 +258,7 @@ Essa função tem o intuito de achar um número que tem o mdc entre os dois prim
   </li><li>O que é a notação Big O: complexidade de tempo e de espaço. Disponível em: https://www.freecodecamp.org/portuguese/news/o-que-e-a-notacao-big-o-complexidade-de-tempo-e-de-espaco. Acesso em: 15 jun. 2024.
   </li><li>The Sieve of Eratosthenes. Disponível em: https://math.libretexts.org/Bookshelves/Combinatorics_and_Discrete_Mathematics/Elementary_Number_Theory_(Raji)/
   </li><li>Sieve of Eratosthenes - Competitive Programming Algorithms. Disponível em: https://cp-algorithms.com/algebra/sieve-of-eratosthenes.html.
-   </li>
+   </li><li> Todas as imagens produzidas em: CARBON. Carbon - Create and share beautiful images of your source code. Disponível em: https://carbon.now.sh/.</li>
 
 <h2 id="Desenvolvedores">Desenvolvedores</h2>
 
