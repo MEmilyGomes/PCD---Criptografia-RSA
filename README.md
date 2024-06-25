@@ -252,6 +252,13 @@ Essa função tem o intuito de achar um número que tem o mdc entre os dois prim
     
 </div></ul>
 
+<h2 id="Referências">Referências</h2>
+  <li>PIMENTEL, Bruno. Aplicação à Teoria dos Números. UFAL, 2023. 66 slides. Disponível em: https://sites.google.com/ic.ufal.br/matematica-discreta/documentos?authuser=0. Acesso em: 21 maio 2024.</p>
+ </li><li>O Algoritmo Euclidiano (artigo). Disponível em: https://pt.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/the-euclidean-algorithm. Acesso em: 15 jun. 2024.
+  </li><li>O que é a notação Big O: complexidade de tempo e de espaço. Disponível em: https://www.freecodecamp.org/portuguese/news/o-que-e-a-notacao-big-o-complexidade-de-tempo-e-de-espaco. Acesso em: 15 jun. 2024.
+  </li><li>The Sieve of Eratosthenes. Disponível em: https://math.libretexts.org/Bookshelves/Combinatorics_and_Discrete_Mathematics/Elementary_Number_Theory_(Raji)/
+  </li><li>Sieve of Eratosthenes - Competitive Programming Algorithms. Disponível em: https://cp-algorithms.com/algebra/sieve-of-eratosthenes.html.
+   </li>
 
 <h2 id="Desenvolvedores">Desenvolvedores</h2>
 
