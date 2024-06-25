@@ -43,6 +43,8 @@
     <li><a href="#Converter a lista decodificada de volta para o texto original">Converter a lista decodificada de volta para o texto original</a></li>
     <li><a href="#Escrever o texto decodificado">Escrever o texto decodificado</a></li>
     </ul>
+  <li><a href="#Referências">Referências</a></li>
+  <li><a href="#Desenvolvedores">Desenvolvedores</a></li>
 </ul>
 </p>
 
