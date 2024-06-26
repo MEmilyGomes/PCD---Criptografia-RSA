@@ -246,6 +246,7 @@ Essa função tem o intuito de achar um número que tem o mdc entre os dois prim
         <li><strong>Seguro</strong>: O nº número primo, tal que n encontra-se no intervalo $[1 \times 10^4, 1 \times 10^5]$</li>
         <li><strong>Pouco seguro</strong>: O nº número primo, tal que n encontra-se no intervalo $[1 \times 10^2, 1 \times 10^3]$</li>
     </ul>
+    Considerando os resultados obtidos, tivemos que, para 1867 palavras, o algoritmo de criptografia demorou, aproximadamente, 1.24 segundos para realizar a criptografia no nível pouco seguro. Já para o nível seguro, obteve-se um tempo de 13 minutos, enquanto o tempo necessário para que se tivesse a criptografia muito segura, ultrapassou 4 horas. Nesse sentido, observa-se que, embora o algoritmo de RSA represente uma ferramenta segura de se proteger informações, nota-se, que há uma alta demanda computacional e, consequentemente, um alto custo de manutenção desta técnica.
 
 
 </body>
